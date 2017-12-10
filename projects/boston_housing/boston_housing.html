@@ -13327,8 +13327,8 @@ Think about the pros and cons of adding more training points based on if the tra
 <p><strong>Answer: </strong></p>
 <ul>
 <li>I will choose the one with <code>max_depth = 3</code>. Because the specific graph yield the highest testing score when the number of training points grows.</li>
-<li>The training points increase with an increase of testing score and a decrease of training score. This is well-expected since the more training points added, the more noise we introduce in the model. However, the model could fit more situation; in other words, the reduciable error will be lower in this scenario.</li>
-<li>Yes. Just as explained above, more training data would lead to a better performance on the testing dataset.</li>
+<li>At first, the training points increase with an increase of testing score and a decrease of training score. This is well-expected since the more training points added, the more noise we introduce in the model. However, the model could fit more situation. However, as more data added, both training curve and testing curve tend to be flat.</li>
+<li>Not necessarily. At the begining, more training points would benefit the model. However, as more and more data points added, the marginal benefit approaches to zero. Instead, more data points will lead to high computation consumption. At this point, the bottleneck is the model itself. </li>
 </ul>
 
 </div>
@@ -13800,8 +13800,8 @@ McYEDEt6xhhjAoYlPWOMMQHj/wFzVd4FFf6bhAAAAABJRU5ErkJggg==
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
 <ul>
-<li>It suffers from high bias since it is underfitting.</li>
-<li>It suffers from high variance. The high score in the training set and low performance in the validation score is an indication.</li>
+<li>It suffers from high bias since it is underfitting. As is shown in the figure, both training curve and testing curve is low at equilibrium. This is an indication of high bias ---- the model estimation is biased from our target.</li>
+<li>It suffers from high variance. The high score in the training set and low performance in the validation score is an indication. This means the model works well on training set but not validation set. This is high variance.</li>
 </ul>
 
 </div>
@@ -13897,7 +13897,7 @@ McYEDEt6xhhjAoYlPWOMMQHj/wFzVd4FFf6bhAAAAABJRU5ErkJggg==
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong><br>
-In K-fold cross-validation, the original sample is randomly partitioned into K subsamples. Of the K subsamples, a single subsample is retained as the validation data for testing the model, and the remaining K − 1 subsamples are used as training data. The cross-validation process is then repeated K times (the folds), with each of the K subsamples used exactly once as the validation data.<br>
+In K-fold cross-validation, the original sample is randomly partitioned into K subsamples. Of the K subsamples, a single subsample is retained as the validation data for testing the model, and the remaining K − 1 subsamples are used as training data. The cross-validation process is then repeated K times (the folds), with each of the K subsamples used exactly once as the validation data. Finally, we average the K results to obtain a final score estimation.<br>
 The advantage of this method is that all observations are used for both training and validation, and each observation is used for validation exactly once. 10-fold cross-validation is commonly used.</p>
 
 </div>
