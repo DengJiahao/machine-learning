@@ -11726,9 +11726,7 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}
-
-@media print {
+}@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11749,7 +11747,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11773,8 +11771,7 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11785,8 +11782,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11843,8 +11839,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import the visualization code</span>
-<span class="kn">import</span> <span class="nn">visuals</span> <span class="kn">as</span> <span class="nn">vs</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import the visualization code</span>
+<span class="kn">import</span> <span class="nn">visuals</span> <span class="k">as</span> <span class="nn">vs</span>
 
 <span class="c1"># Pretty display for notebooks</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
@@ -11855,8 +11851,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11865,8 +11860,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11883,8 +11877,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11894,8 +11887,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11904,8 +11896,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11919,8 +11910,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11938,8 +11928,7 @@ In the planner.py Python file, will the 'next_waypoint() function consider the E
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11949,8 +11938,7 @@ In the planner.py Python file, will the 'next_waypoint() function consider the E
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11973,7 +11961,7 @@ Run the agent.py file after setting the flags from projects/smartcab folder inst
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Load the &#39;sim_no-learning&#39; log file from the initial simulation results</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load the &#39;sim_no-learning&#39; log file from the initial simulation results</span>
 <span class="n">vs</span><span class="o">.</span><span class="n">plot_trials</span><span class="p">(</span><span class="s1">&#39;sim_no-learning.csv&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -11986,7 +11974,9 @@ Run the agent.py file after setting the flags from projects/smartcab folder inst
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -13057,8 +13047,7 @@ TkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13074,8 +13063,7 @@ TkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13089,8 +13077,7 @@ TkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13100,8 +13087,7 @@ TkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13121,8 +13107,7 @@ TkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13132,8 +13117,7 @@ TkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13154,8 +13138,7 @@ TkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13166,8 +13149,7 @@ TkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13177,8 +13159,7 @@ TkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13192,8 +13173,7 @@ TkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13203,8 +13183,7 @@ TkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13228,8 +13207,7 @@ TkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13242,7 +13220,8 @@ TkSuQmCC
 <li><code>'learning'</code> - Set this to <code>'True'</code> to tell the driving agent to use your Q-Learning implementation.</li>
 </ul>
 <p>In addition, use the following decay function for $\epsilon$:</p>
-$$ \epsilon_{t+1} = \epsilon_{t} - 0.05, \hspace{10px}\textrm{for trial number } t$$<p>If you have difficulty getting your implementation to work, try setting the <code>'verbose'</code> flag to <code>True</code> to help debug. Flags that have been set here should be returned to their default setting when debugging. It is important that you understand what each flag does and how it affects the simulation!</p>
+<p>$$ \epsilon_{t+1} = \epsilon_{t} - 0.05, \hspace{10px}\textrm{for trial number } t$$</p>
+<p>If you have difficulty getting your implementation to work, try setting the <code>'verbose'</code> flag to <code>True</code> to help debug. Flags that have been set here should be returned to their default setting when debugging. It is important that you understand what each flag does and how it affects the simulation!</p>
 <p>Once you have successfully completed the initial Q-Learning simulation, run the code cell below to visualize the results. Note that log files are overwritten when identical simulations are run, so be careful with what log file is being loaded!</p>
 
 </div>
@@ -13253,7 +13232,7 @@ $$ \epsilon_{t+1} = \epsilon_{t} - 0.05, \hspace{10px}\textrm{for trial number }
 <div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Load the &#39;sim_default-learning&#39; file from the default Q-Learning simulation</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load the &#39;sim_default-learning&#39; file from the default Q-Learning simulation</span>
 <span class="n">vs</span><span class="o">.</span><span class="n">plot_trials</span><span class="p">(</span><span class="s1">&#39;sim_default-learning.csv&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -13266,7 +13245,9 @@ $$ \epsilon_{t+1} = \epsilon_{t} - 0.05, \hspace{10px}\textrm{for trial number }
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -14465,8 +14446,7 @@ liRJkiT1yL8ea6Puu1spkwAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14482,8 +14462,7 @@ liRJkiT1yL8ea6Puu1spkwAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14496,8 +14475,7 @@ $$0.05=1−0.05t,$$thus $$t=20 trials$$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14507,8 +14485,7 @@ $$0.05=1−0.05t,$$thus $$t=20 trials$$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14528,7 +14505,8 @@ $$0.05=1−0.05t,$$thus $$t=20 trials$$</p>
 <li><code>'tolerance'</code> - set this to some small value larger than 0 (default was 0.05) to set the epsilon threshold for testing.</li>
 </ul>
 <p>Furthermore, use a decaying function of your choice for $\epsilon$ (the exploration factor). Note that whichever function you use, it <strong>must decay to </strong><code>'tolerance'</code><strong> at a reasonable rate</strong>. The Q-Learning agent will not begin testing until this occurs. Some example decaying functions (for $t$, the number of trials):</p>
-$$ \epsilon = a^t, \textrm{for } 0 < a < 1 \hspace{50px}\epsilon = \frac{1}{t^2}\hspace{50px}\epsilon = e^{-at}, \textrm{for } 0 < a < 1 \hspace{50px} \epsilon = \cos(at), \textrm{for } 0 < a < 1$$<p>You may also use a decaying function for $\alpha$ (the learning rate) if you so choose, however this is typically less common. If you do so, be sure that it adheres to the inequality $0 \leq \alpha \leq 1$.</p>
+<p>$$ \epsilon = a^t, \textrm{for } 0 &lt; a &lt; 1 \hspace{50px}\epsilon = \frac{1}{t^2}\hspace{50px}\epsilon = e^{-at}, \textrm{for } 0 &lt; a &lt; 1 \hspace{50px} \epsilon = \cos(at), \textrm{for } 0 &lt; a &lt; 1$$
+You may also use a decaying function for $\alpha$ (the learning rate) if you so choose, however this is typically less common. If you do so, be sure that it adheres to the inequality $0 \leq \alpha \leq 1$.</p>
 <p>If you have difficulty getting your implementation to work, try setting the <code>'verbose'</code> flag to <code>True</code> to help debug. Flags that have been set here should be returned to their default setting when debugging. It is important that you understand what each flag does and how it affects the simulation!</p>
 <p>Once you have successfully completed the improved Q-Learning simulation, run the code cell below to visualize the results. Note that log files are overwritten when identical simulations are run, so be careful with what log file is being loaded!</p>
 
@@ -14540,7 +14518,7 @@ $$ \epsilon = a^t, \textrm{for } 0 < a < 1 \hspace{50px}\epsilon = \frac{1}{t^2}
 <div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Load the &#39;sim_improved-learning&#39; file from the improved Q-Learning simulation</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load the &#39;sim_improved-learning&#39; file from the improved Q-Learning simulation</span>
 <span class="n">vs</span><span class="o">.</span><span class="n">plot_trials</span><span class="p">(</span><span class="s1">&#39;sim_improved-learning.csv&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -14553,7 +14531,9 @@ $$ \epsilon = a^t, \textrm{for } 0 < a < 1 \hspace{50px}\epsilon = \frac{1}{t^2}
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -15827,8 +15807,7 @@ LDMzMzMzswpxgmVmZmZmZlYh/w9d1cbeU/H1xAAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15845,8 +15824,7 @@ LDMzMzMzswpxgmVmZmZmZlYh/w9d1cbeU/H1xAAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15862,8 +15840,7 @@ $$\log_{0.85}(0.00000001) = 114$$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15872,8 +15849,7 @@ $$\log_{0.85}(0.00000001) = 114$$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15893,8 +15869,7 @@ $$\log_{0.85}(0.00000001) = 114$$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15903,8 +15878,8 @@ $$\log_{0.85}(0.00000001) = 114$$</p>
 
 <pre><code>state = (inputs['light'], waypoint, inputs['left'], inputs['oncoming'])</code></pre>
 <p>The optimal policy should be like this:</p>
-<p>If the light is green, the car should move towards the waypoint with only two exceptions when there is an oncoming vehicle driving forward and you are tring to turn left or the oncoming vehicle is going to left and you are turning right.</p>
-<p>If the light is red, it is only optimal to turn right (towards the waypoint direction) when the oncoming vehicle is not turning left. Otherwise, the car should not move.</p>
+<p>If the light is green, the car should move towards the waypoint direction.</p>
+<p>If the light is red, it is only optimal to turn right (towards the waypoint direction). However, the agent need to check the left vehicle and make sure it is not going forward.</p>
 <p>In the sim_improved-learning.txt, the Q scores are not optimal for all the states. In other words, some states have optimal actions while other not.</p>
 <p>For examples of optimal policy:</p>
 <ul>
@@ -15943,7 +15918,7 @@ $$\log_{0.85}(0.00000001) = 114$$</p>
  -- right : 1.33
  -- left : 0.00</code></pre>
 
-<pre><code>- In this example, even though the red light is on, the agent can still turn right because there is no on coming vehicle turning left.
+<pre><code>- In this example, even though the red light is on, the agent can still turn right because there are no left vehicles.
 
 </code></pre>
 <p>Examples of non-optimal policy:</p>
@@ -15970,13 +15945,12 @@ $$\log_{0.85}(0.00000001) = 114$$</p>
  -- right : 1.19
  -- left : 0.00</code></pre>
 
-<pre><code>- In this case, the light is green, and the agent needs to go forward. The agent should have go left in our understanding. However, the highest score goes to right instead.</code></pre>
+<pre><code>- In this case, the light is green, and the agent needs to go forward. The agent should have go forward in our understanding. However, the highest score goes to right instead.</code></pre>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15986,8 +15960,7 @@ $$\log_{0.85}(0.00000001) = 114$$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15996,8 +15969,7 @@ $$\log_{0.85}(0.00000001) = 114$$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16006,8 +15978,7 @@ $$\log_{0.85}(0.00000001) = 114$$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
